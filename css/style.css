@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #5B6157;
+    --secondary-color: #A46844;
+    --bg-color-1: #EEEEEE;
+    --bg-color-2: #292E26;
+
+} 
+
+/********************************************
+ General Rules:
+*********************************************/
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    list-style: none;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+/********************************************
+ Info Section: 
+*********************************************/
