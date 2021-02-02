@@ -75,7 +75,25 @@ img {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.8rem;
-}
+} 
+
+.next-btn{
+    background-color: #efefef;
+    width: 3.2rem;
+    height: 3.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .3s ease;
+} 
+
+.next-btn:hover{
+    transform: scale(1.2);
+} 
 
 .badge {
     width: 1.6rem;
@@ -89,6 +107,19 @@ img {
     box-shadow: inset 0px 0px 0px 3px #ffffff;
 }
 
+.next-badge {
+    border: 1px solid #aa9f99;
+    background-color: transparent;
+}
+
+.next-badge:active {
+    border: 2px solid var(--secondary-color);
+    background-color: #a46844;
+}
+.next-badge:not(:last-child) {
+    margin-right: 1.2rem;
+}
+
 /********************************************
  Nav Section: 
 *********************************************/
@@ -98,6 +129,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transform: translateX(-10%);
 }
 
 .nav__logo {
@@ -174,6 +206,11 @@ img {
     background-position: center;
     border-radius: 3.2rem 3.2rem 0 0;
     position: relative;
+    transform: translateX(-10%);
+} 
+
+.hero__text{
+    width: 55%;
 }
 
 .hero__title {
@@ -187,20 +224,6 @@ img {
 .hero__next {
     margin-top: 25rem;
     display: flex;
-}
-
-.hero__badge {
-    border: 1px solid #aa9f99;
-    background-color: transparent;
-}
-
-.hero__badge:active {
-    border: 2px solid var(--secondary-color);
-    background-color: #a46844;
-}
-
-.hero__badge:not(:last-child) {
-    margin-right: 1.2rem;
 }
 
 .hero-card {
@@ -294,4 +317,85 @@ img {
     background-color: #ffffff;
     top: -30%;
     left: 20%;
+} 
+
+.hero-next{
+    padding: 2.4rem 3.2rem;
+    background-color: #FAFBFD;
+    border-radius: 4px 32px;
+    position: absolute;
+    top: 30%;
+    right: -20%;
+}
+
+.hero-next__suptitle{
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}
+
+.hero-next__title{
+    font-size: 2.4rem;
+    width: 70%;
+    margin-bottom: 1.2rem;
+} 
+
+.hero-next__photo{
+    width: 16rem;
+    height: 20rem;
+    position: absolute;
+    bottom: -70%;
+    right: -10%;
+}
+
+/********************************************
+ Collection Section:
+*********************************************/
+
+.collection{
+    padding: 12rem 0;
+}
+
+.collection__header{
+    padding: 3.2rem 0;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid #292e26;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+} 
+
+.collection__buttons{
+    display: flex;
+}
+
+.collection__button:first-child{
+    margin-right: 1.6rem;
+} 
+
+.collection__button{
+    transition: background-color .3s ease,
+                color .3s ease;
+}
+
+.collection__button:hover{
+    background-color: #292e26;
+    color: #ffffff;
+} 
+
+.collection__list{
+    margin-bottom: 2.8rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 3.2rem;
+}
+.collection__item{
+    position: relative;
+}
+.collection__link{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+}
+.collection__image{
+    height: 35rem;
 }
